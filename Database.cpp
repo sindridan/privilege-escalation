@@ -9,9 +9,9 @@ vector<Person> Database::getUsers()
     string userName, pw;
     while (infile >> userName >> pw)
     {
-        Person user;
-        user.setName(userName);
-        user.setPassword(pw);
+        Person user(userName, pw);
+        //user.setName(userName);
+        //user.setPassword(pw);
         users.push_back(user);
     }
     return users;

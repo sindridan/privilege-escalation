@@ -9,5 +9,5 @@ using namespace std;
 class Database
 {
 public:
-    static vector<Person> getUsers();
+    vector<Person> getUsers();
 };

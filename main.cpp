@@ -19,11 +19,11 @@ int main(int argc, char* argv[])
 
     // Load 2 main users: Sam and Timmy
     Database db;
-    vector<Person> users = db.getUsers;
+    vector<Person> users = db.getUsers();
 
-    for(int i = 0; i < users.size(); i++) {
+    /*for(int i = 0; i < users.size(); i++) {
         cout << users[i].getName();
-    }
+    }*/
 
     loginInfo login;
     std::cout << "Welcome to Nakatomi Plaza Employee login." << std::endl;
@@ -35,6 +35,7 @@ int main(int argc, char* argv[])
     cin >> login.userName;
     cout << "Password: ";
     cin >> login.password;
+    
     cout << "Enter linux command: ";
     string comd;
     cin >> comd;
